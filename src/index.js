@@ -108,23 +108,25 @@ class DrumMachine extends React.Component {
     render() {
         return (
             <div id='drum-machine' tabIndex="0" onKeyDown={this.handleKeyPressed} className='container'>
-                <div className='row'>
-                    {this.renderDrumPad('Q')}
-                    {this.renderDrumPad('W')}
-                    {this.renderDrumPad('E')}
-                </div>
-                <div className='row'>
-                    {this.renderDrumPad('A')}
-                    {this.renderDrumPad('S')}
-                    {this.renderDrumPad('D')}
-                </div>
-                <div className='row'>
-                    {this.renderDrumPad('Z')}
-                    {this.renderDrumPad('X')}
-                    {this.renderDrumPad('C')}
-                </div>
-                <div id='display'>
-                    {this.state.currentAudioName}
+                <div id='drum-board' className='container'>
+                    <div className='row'>
+                        {this.renderDrumPad('Q')}
+                        {this.renderDrumPad('W')}
+                        {this.renderDrumPad('E')}
+                    </div>
+                    <div className='row'>
+                        {this.renderDrumPad('A')}
+                        {this.renderDrumPad('S')}
+                        {this.renderDrumPad('D')}
+                    </div>
+                    <div className='row'>
+                        {this.renderDrumPad('Z')}
+                        {this.renderDrumPad('X')}
+                        {this.renderDrumPad('C')}
+                    </div>
+                    <div id='display'>
+                        {this.state.currentAudioName}
+                    </div>
                 </div>
             </div>
         );

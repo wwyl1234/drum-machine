@@ -1,19 +1,60 @@
 
-
+/* Style the drum-machine */
 #drum-machine {
-   background-color: brown;
+   background-color: #964B00;
    padding: 1em;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
+/* Style the drum-board */
+#drum-board {
+    width: 50%;
+}
 
+/* Style the drum-pad */
 .drum-pad {
-    border: 1px solid black;
+    border: 0.5em solid black;
+    border-radius: 50%;
     padding: 1em;
-    background-color: yellow;
-    height: 5em;
+    background-color: #ffffaa;
     width: 5em;
 }
 
+/* Style the row */
+.row {
+    height: 5em;
+}
+
+/* Style the display */
 #display {
+    margin-top: 2em;
     font-size: 2em;
+    border: 0.1em solid black;
+    background-color: white;
+    padding: 1em;
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+    
+    /* Style the drum-board */
+    #drum-board {
+        width: 100%;
+        margin-left: 5em;
+    }
+
+    /* Style the display */
+    #display {
+        margin-top: 2em;
+        font-size: 1em;
+        border: 0.1em solid black;
+        background-color: white;
+        padding: 1em;
+        width: 50%;
+        
+    }
+
 }
