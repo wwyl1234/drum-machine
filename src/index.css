@@ -1,0 +1,19 @@
+
+
+#drum-machine {
+   background-color: brown;
+   padding: 1em;
+}
+
+
+.drum-pad {
+    border: 1px solid black;
+    padding: 1em;
+    background-color: yellow;
+    height: 5em;
+    width: 5em;
+}
+
+#display {
+    font-size: 2em;
+}
